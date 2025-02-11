@@ -6,8 +6,11 @@ This folder contains implementations of reductions from **Sudoku** and **Hamilto
 
 ## Implemented Reductions
 
-- **Sudoku to SAT:** Encodes a given Sudoku puzzle as a SAT formula, ensuring valid row, column, and box constraints.
-- **Hamiltonian Cycle to SAT:** Translates a graph's Hamiltonian cycle problem into a SAT instance, enforcing path constraints.
+- **Sudoku to SAT:**  
+  Sudoku is a number-placement puzzle where each row, column, and subgrid must contain distinct numbers. The reduction converts a Sudoku grid into a SAT formula that enforces these constraints.
+
+- **Hamiltonian Cycle to SAT:**  
+  The Hamiltonian Cycle problem asks whether a given graph contains a cycle that visits each vertex exactly once. The reduction encodes this as a SAT problem, ensuring a valid path exists.
 
 ## Usage
 

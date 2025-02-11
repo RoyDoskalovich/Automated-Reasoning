@@ -53,10 +53,3 @@ This repository contains an implementation of Tseytin transformation using **PyS
 python tseytin.py
 ```
 
-### Example Output
-
-```plaintext
-Formula: (A ∧ B) ∨ (C ∧ ¬D)
-CNF Formula: (¬X1 ∨ A) ∧ (¬X1 ∨ B) ∧ (X1 ∨ ¬A ∨ ¬B) ∧ ...
-```
-

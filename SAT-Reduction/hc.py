@@ -55,12 +55,16 @@ def hamiltonian_cycle_sat(nodes, edges):
             return None
 
 
-# Example usage
+# SML Example V1
+nodes = [x + 1 for x in range(5)]
+edges = [(1, 2), (2, 3), (3, 4),
+         (4, 5), (5, 1)]
+
+# SML Example V2
 # nodes = ["A", "B", "C", "D"]
 # edges = [("A", "B"), ("B", "C"), ("C", "D"), ("D", "A"), ("B", "D")]
 
-
-# Example presentation
+# MID Example
 # nodes = [x + 1 for x in range(20)]
 # edges = [(1, 20), (1, 2), (1, 5),
 #          (2, 18), (2, 3),
@@ -81,10 +85,6 @@ def hamiltonian_cycle_sat(nodes, edges):
 #          (18, 19),
 #          (19, 20)]
 
-nodes = [x + 1 for x in range(5)]
-edges = [(1, 2), (2, 3), (3, 4),
-         (4, 5), (5, 1)]
-
 # BIG Example
 # def generate_random_pairs(num_pairs,n):
 #     pairs = [(random.randint(0, n-1), random.randint(0, n-1)) for _ in range(num_pairs)]
@@ -96,6 +96,7 @@ edges = [(1, 2), (2, 3), (3, 4),
 # num_pairs = 450
 # nodes = [x for x in range(n)]
 # edges = set(generate_random_pairs(num_pairs, n))
+
 
 solution = hamiltonian_cycle_sat(nodes, edges)
 if solution:
